@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f2f2f2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.total-container {
+  display: flex;
+  margin-left: 80%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  align-self: center;
+}
+
+.input-container {
+  display: flex;
+  width: 19%;
+  padding-left: 1%;
+  justify-content: space-between;
+}
+
+.input-container>input {
+  width: 81%;
+  background-color: #f2f2f2;
+  border: none;
+  border-bottom: 1px solid #282C34;
+  outline: none;
+}
+
+.input-container>span {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  height: 350px;
+  overflow-y: scroll;
+  width: 90%;
+}
+
+.list-text-container {
+  display: flex;
+  width: 100%;
+  margin-top: 2%;
+  border-bottom: 2px dashed #282C34;
+}
+
+.list-text-container>input {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.list-text-container>span {
+  cursor: pointer;
+}
+
+.list-text-completed {
+  text-decoration: line-through;
+}
+
+.list-index-completed {
+  text-decoration: line-through;
 }
